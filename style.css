@@ -1,0 +1,472 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+html {
+    display: block;
+    color: -internal-root-color;
+}
+
+body{
+	margin: 0;
+	font-family: "Helvetica", sans-serif;
+	background-color: black;
+	font-size: 22px;
+	color: seashell;
+	text-align: center;
+	display: block;
+}
+
+
+.mynav a{
+	color: seashell;
+	text-decoration: none;
+}
+
+h1{
+	padding: 10px;
+	margin: 0;
+	font-size: 2.5em;
+	
+}
+
+.special{
+	font-size: 43px;
+}
+
+h2, h3, h4 {
+	padding: 10px;
+	margin: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+div {
+    display: block;
+}
+
+
+p{
+	font-size: 22px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+/*Header section*/
+
+div.set{
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid seashell;
+	height: 135px;
+	z-index: 1;
+	background-color: black;
+	align-items: center;
+	font-size: 26px;
+	transition: top 0.3s;
+}
+
+div.set a
+{
+    text-decoration: none;
+    padding-top: 10px;
+	padding-bottom: 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.set img {
+	height: 120px;
+	padding-left: 10px;
+}
+
+.mynav {
+	text-align: right;
+	flex-grow: 1;
+}
+
+.mynav span {
+	display: inline-block;
+	padding: 30px 30px;
+}
+
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/*This is for making the nav bar into a menu when it shrinks to small*/
+@media screen and (max-width: 739px) {
+ 
+}
+
+/* Main Section */
+
+.main{
+	padding-top: 136px;
+	opacity: 0.9;
+	margin: auto;
+	width: auto;
+}
+
+/* Welcome Section */
+
+#welcome {
+	height: 700px;
+	background-image: url("https://monodomo.com/free-wallpapers/snow-mountain-wallpaper-high-quality-For-Free-Wallpaper.jpg");
+	padding-top: 70px;	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#welcome .content {
+	margin: auto;
+	background-color: black;
+	width: 100%;
+}
+
+#projects {
+	width: auto;
+	height: 700px;
+	padding-top: 75px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.project {
+	padding: 5px;
+}
+
+.project input{
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+	display: block;
+}
+
+.project input:hover{
+	opacity: 0.5;
+}
+
+.project span {
+	display: block;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+/* aboutme Section */
+
+.flex-container.aboutme {
+	padding-top: 5px;
+}
+
+#aboutme{
+	background-image: url("https://live.staticflickr.com/1147/655648037_d784a923b8_b.jpg");
+	height: 500px;
+	padding-top: 70px;	
+	margin-top: 90px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+#aboutme .flex-container {
+	margin: auto;
+	width: auto;
+	
+}
+
+.topic{
+	opacity: 1.0;
+	padding: 10px;
+	margin: 5px 20px;
+	background-color: black;
+	flex-basis: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border: 1px solid white;
+}
+
+/*Modals for the pictures*/
+
+
+
+/*Footer*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 170px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+	margin-left: -10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/*Resume link*/
+.dnwloadlink {
+	text-decoration: none;
+}
+
+.dnwloadlink p{
+	color:  #5383d3;
+	font: 'Cookie', cursive;
+	padding-bottom: 25px;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-phone{
+	transform: rotate(90deg);
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 43px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+/* Media queries */
+
+
+/*mail:to adjustment */
+@media (max-width: 875px){
+
+	.footer-distributed .footer-center p a {
+		font-size: 19px;
+	}
+
+}
+
+/*Decrease font size of nav links as screen shrinks*/
+@media (max-width: 745px){
+	div.set a{
+		font-size: 19px;
+	}
+	.set img{
+		height: 100px;
+	}
+}
+
+@media (max-width: 615px){
+	div.set a{
+		font-size: 13px;
+	}
+	.set img{
+		height: 70px;
+	}
+}
+
+/*Move projects stage 1*/
+@media (max-width: 1038px){
+	#projects{
+		margin-top: 300px;
+	}
+}
+
+/*Move projects stage 2*/
+@media (max-width: 696px){
+	#projects{
+		margin-top: 550px;
+	}
+}
+
+/*Move footer down*/
+@media (max-width: 687px){
+	.footer-distributed{
+		margin-top: 900px;
+	}
+}
+
+@media (max-width: 1150px){
+	#aboutme{
+		background-size: cover;
+	}
+}
+
+

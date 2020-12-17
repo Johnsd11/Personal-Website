@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Dennis Johns</title>
+<!--Personal StyleSheet-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--LINK THE JAVASCRIPT
+<script src="scripts.js"></script>
+-->
+<!--Icon library-->
+<script src="https://kit.fontawesome.com/47515fefff.js"></script>
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--Header-->
+
+<div class="flex-container set topBotomBordersIn" id=navbar>
+	<img src="C:\Users\Dennis\Downloads\Resume website\img\profilePic.PNG" />
+	<nav class="mynav">
+		<span><a href="#aboutme">About Me</a></span>
+		<span><a href="#projects">My Projects</a></span>
+		<span><a href="#contact">Contact Me</a></span>
+	</nav>
+</div>
+
+<!--Main Content Container-->
+
+	<div class="main">
+
+	<!--Welcome Section-->
+
+		<div id=welcome class="flex-container">
+			<div class="content">
+			<h4>Professional Bio</h4>
+			<h1>Jillian Bove</h1>
+			</div>
+		</div>
+
+
+
+	<!-- About Me Section -->
+
+		<div id="aboutme">
+		  <h1 class="special">About Me</h1>
+		  <div class="flex-container aboutme">
+			<div class="topic">
+			  <h3><u>Education</u></h3>
+			  <p>I'm currently attending Union College
+				in Schenectady, NY. I am a computer science major
+				and will be graduating 2021</p>
+			</div>
+			<div class="topic">
+			  <h3><u>Interests and Clubs</u></h3>
+			  <p><b>I love to:</b></p>
+			  <p>-Snowboard</p>
+			  <p>-Play soccer</p>
+			  <p>-Fish in the sea</p>
+			  <p>-Play board games</p>
+			  <p>-and code</p>
+			  <p><b>I'm part of:</b></p>
+			  <p>-ACM club</p>
+			  <p>-Chi Psi Fraternity</p>
+			  <p>-Ski club</p>
+			</div>
+			<div class="topic">
+			  <h3><u>Current Goals</u></h3>
+			  <p>Right now my goal is to start my
+			  career in the Software Development industry.
+			  I hope to gain as much experience as I can from anyone
+			  currently in the industry.
+			  I always strive to continue learning.
+			  Knowing more allows me to do more and there is just
+			  so much you can do with computers
+			  </p>
+
+			</div>
+		  </div>
+		</div>
+
+	<!-- Projects Section -->
+    <div id="projects">
+      <h1 class="special">My Portfolio</h1>
+      <div class="flex-container project">
+        <div class="project">
+		  <input type="image"  src="C:\Users\Dennis\Downloads\Resume website\img\sql.png" />
+		  <span>FIFA Database</span>
+		</div>
+
+        <div class="project">
+		  <input type="image" src="C:\Users\Dennis\Downloads\Resume website\img\python.svg" style= "border-radius: 20%"/>
+          <span>Video Game</span>
+        </div>
+        <div class="project">
+			<input type="image" src="https://media.licdn.com/dms/image/C4E0BAQHLpjErAD4kEQ/company-logo_400_400/0?e=1571875200&v=beta&t=QIi9kuL5s9iubOLNUEKpcK1mME6oBp3kGIY7sujxUFA" style= "border-radius: 20%"/>
+          <span>enSYNC</span>
+        </div>
+        <div class="project">
+			<input type="image" src="C:\Users\Dennis\Downloads\Resume website\img\acm.png" style= "border-radius: 20%; background-color: white"/>
+          <span>Clubs</span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+	<!-- Footer Section -->
+
+	<footer class="footer-distributed" id=contact>
+
+		<div class="footer-left">
+
+			<h3>Download My Resume</h3>
+
+			<a class="dnwloadlink" href="C:\Users\Dennis\Downloads\Resume website\img\Resume_Dennis_Johns_May2019.docx" download>
+				<p>Click Here To Download my Resume (May 2019)</p>
+			</a>
+
+			<p class="footer-company-name">Dennis Johns &copy; 2015</p>
+		</div>
+
+		<div class="footer-center">
+
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>807 Union st</span>Schenectady, NY</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+1 240-328-2724</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:johnsd@union.edu">johnsd@union.edu</a></p>
+			</div>
+
+		</div>
+
+		<div class="footer-right">
+
+			<h3>Follow Me</h3>
+
+			<div class="footer-icons">
+				<a href="https://www.linkedin.com/in/dennis-johns-43b978168/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/Johnsd11"><i class="fab fa-github"></i></a>
+			</div>
+
+		</div>
+
+	</footer>
+
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+		document.getElementById("navbar").style.top = "0";
+	  } else {
+		document.getElementById("navbar").style.top = "-135px";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+
+	</script>
+
+  </body>
+</html>
