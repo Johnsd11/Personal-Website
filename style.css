@@ -183,6 +183,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 .project {
 	padding: 5px;
+	
 }
 
 .project input{
@@ -190,6 +191,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 	width: 300px;
 	margin: 10px;
 	display: block;
+	
 }
 
 .project input:hover{
@@ -202,6 +204,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 	padding: 5px;
 	text-align: center;
 }
+
 
 /* aboutme Section */
 
@@ -468,5 +471,34 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 		background-size: cover;
 	}
 }
+
+#dropdown1{
+	display: block;
+	padding: 5px;
+}
+
+#dropdown2{
+	display: block;
+	padding: 5px;
+}
+
+#dropdown3{
+	display: block;
+	padding: 5px;
+}
+
+#dropdown4{
+	display: block;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 

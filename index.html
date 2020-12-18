@@ -7,9 +7,8 @@
 <!--Personal StyleSheet-->
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<!--LINK THE JAVASCRIPT
+
 <script src="scripts.js"></script>
--->
 <!--Icon library-->
 <script src="https://kit.fontawesome.com/47515fefff.js"></script>
 
@@ -21,7 +20,7 @@
 <!--Header-->
 
 <div class="flex-container set topBotomBordersIn" id=navbar>
-	<img src="C:\Users\Dennis\Downloads\Resume website\img\profilePic.PNG" />
+	<img src="img/profilePic.PNG" />
 	<nav class="mynav">
 		<span><a href="#aboutme">About Me</a></span>
 		<span><a href="#projects">My Projects</a></span>
@@ -38,7 +37,7 @@
 		<div id=welcome class="flex-container">
 			<div class="content">
 			<h4>Professional Bio</h4>
-			<h1>Jillian Bove</h1>
+			<h1>Dennis Johns</h1>
 			</div>
 		</div>
 
@@ -53,15 +52,14 @@
 			  <h3><u>Education</u></h3>
 			  <p>I'm currently attending Union College
 				in Schenectady, NY. I am a computer science major
-				and will be graduating 2021</p>
+				and will be graduating 2021.</p>
 			</div>
 			<div class="topic">
 			  <h3><u>Interests and Clubs</u></h3>
 			  <p><b>I love to:</b></p>
 			  <p>-Snowboard</p>
 			  <p>-Play soccer</p>
-			  <p>-Fish in the sea</p>
-			  <p>-Play board games</p>
+			  <p>-Go for runs</p>
 			  <p>-and code</p>
 			  <p><b>I'm part of:</b></p>
 			  <p>-ACM club</p>
@@ -75,8 +73,8 @@
 			  I hope to gain as much experience as I can from anyone
 			  currently in the industry.
 			  I always strive to continue learning.
-			  Knowing more allows me to do more and there is just
-			  so much you can do with computers
+			  Knowing more allows me to do more, when there is an endless 
+			  supply of things to do with computers.
 			  </p>
 
 			</div>
@@ -87,24 +85,29 @@
     <div id="projects">
       <h1 class="special">My Portfolio</h1>
       <div class="flex-container project">
-        <div class="project">
-		  <input type="image"  src="C:\Users\Dennis\Downloads\Resume website\img\sql.png" />
-		  <span>FIFA Database</span>
+        <div class="project" id="sql-button">
+		  <input type="image"  src="img/sql.png" />
+		  <span><button type='button' onclick="toggleText1()">Click me</button></span>		  
 		</div>
 
         <div class="project">
-		  <input type="image" src="C:\Users\Dennis\Downloads\Resume website\img\python.svg" style= "border-radius: 20%"/>
-          <span>Video Game</span>
+		  <input type="image" src="img/python.svg" style= "border-radius: 20%"/>
+          <span><button type='button' onclick="toggleText2()">Click me</button></span>
         </div>
         <div class="project">
-			<input type="image" src="https://media.licdn.com/dms/image/C4E0BAQHLpjErAD4kEQ/company-logo_400_400/0?e=1571875200&v=beta&t=QIi9kuL5s9iubOLNUEKpcK1mME6oBp3kGIY7sujxUFA" style= "border-radius: 20%"/>
-          <span>enSYNC</span>
+			<input type="image" src="img/Logo-color-ensync.webp" style= "border-radius: 20%"/>
+          <span><button type='button' onclick="toggleText3()">Click me</button></span>
         </div>
         <div class="project">
-			<input type="image" src="C:\Users\Dennis\Downloads\Resume website\img\acm.png" style= "border-radius: 20%; background-color: white"/>
-          <span>Clubs</span>
+			<input type="image" src="img/acm.png" style= "border-radius: 20%; background-color: white"/>
+          <span><button type='button' onclick="toggleText4()">Click me</button></span>
         </div>
-        </div>
+		</div>
+		<p id='dropdown1' style='display: none'>Hello Javascript dflkasbkfbaskjgbasdklbfgaskdjbfksldfbkjsjbvklzxbvklzbfklasbfklbasdklfbsdklfbskddbfklasdbf
+		askdfbklasbfklasbdfklbasdkfbsakdbfkajsdbfkjb</p> 
+		<p id='dropdown2' style='display: none'>Hello </p>
+		<p id='dropdown3' style='display: none'>Hel</p>
+		<p id='dropdown4' style='display: none'>H</p> 
       </div>
     </div>
 
@@ -117,7 +120,7 @@
 
 			<h3>Download My Resume</h3>
 
-			<a class="dnwloadlink" href="C:\Users\Dennis\Downloads\Resume website\img\Resume_Dennis_Johns_May2019.docx" download>
+			<a class="dnwloadlink" href="files/August_2020_Resume.pdf" download>
 				<p>Click Here To Download my Resume (May 2019)</p>
 			</a>
 
